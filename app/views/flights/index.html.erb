@@ -1,0 +1,3 @@
+<%= form_with url: "/flights/", method: "GET" do |f|%>
+<%= f.select(:departure_airport, @departure_options)%>
+<% end %>
