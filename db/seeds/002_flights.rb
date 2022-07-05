@@ -12,107 +12,107 @@ Flight.create(
     [{
       
         departure_time: Time.new(2024, 6, 1, 12, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 12, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 14, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 14, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 15, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 15, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 19, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 19, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 20, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 20, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 0, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 0, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 2, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 2, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 4, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 4, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 7, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 7, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 11, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 11, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 11, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 11, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 12, 0, 0, '-07:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 12, 0, 0, '-07:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 15, 0, 0, '-05:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 15, 0, 0, '-05:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 14, 0, 0, '-05:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 14, 0, 0, '-05:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 14, 0, 0, '-05:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 14, 0, 0, '-05:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 15, 0, 0, '-03:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 15, 0, 0, '-03:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 15, 0, 0, '-03:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 15, 0, 0, '-03:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 16, 0, 0, '-03:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 16, 0, 0, '-03:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 18, 0, 0, '+02:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 18, 0, 0, '+02:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 18, 0, 0, '+02:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 18, 0, 0, '+02:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }, {
       
         departure_time: Time.new(2024, 6, 1, 19, 0, 0, '+02:00'),
-        departure_airport: RandomAirportSelector.get_airport,
+        departure_date: Time.new(2024, 6, 1, 19, 0, 0, '+02:00'),        departure_airport: RandomAirportSelector.get_airport,
         arrival_airport: RandomAirportSelector.get_airport
     }]
   )
