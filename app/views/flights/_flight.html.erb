@@ -1,9 +1,5 @@
-<%unless flights.nil?%>
-<%flights.each do |flight|%>
 <div class="flight-card">
     <h3 class="departure_airport"><%=Airport.find(flight.departure_airport_id).code%></h3>
     <h3 class="arrival_airport"><%=Airport.find(flight.arrival_airport_id).code%></h3>
     <h5 class="date"><%=flight.departure_date%></h5>
 </div>
-<% end %>
-<% end %>

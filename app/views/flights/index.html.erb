@@ -10,4 +10,4 @@
 <%= f.submit "Search"%>
 <% end %>
 
-<%= render 'flight', flights: @flights%>
+<%= render 'flight_form', flights: @flights, passenger_count: params[:number_of_passangers]%>
