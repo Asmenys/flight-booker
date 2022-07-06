@@ -3,7 +3,9 @@
 <%= f.select(:departure_airport, @departure_options)%>
 <%= f.label :arrival_airport, "arrival airport:"%>
 <%= f.select(:arrival_airport, @arrival_options)%>
-<%= f.label :departure_dates, "Departure date:"%>
-<%= f.select(:date, @departure_dates)%>
+<%= f.label :number_of_passangers, "Number of passangers:"%>
+<%= f.select(:number_of_passangers, @passanger_options)%>
+<%= f.label :departure_date, "Departure date:"%>
+<%= f.select(:departure_date, @departure_dates)%>
 <%= f.submit "Search"%>
 <% end %>
