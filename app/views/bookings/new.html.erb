@@ -1,1 +1,12 @@
-<%= form_with model: @booking%>
+<%= form_with model: @booking do |f|%>
+<%= render 'flights/flight', flight: Flight.find(@booking.flight_id)%>
+    <% params[:passenger_count].to_i.times do %>
+    <%= f.fields_for @booking.passengers.build do |passenger_form| %>
+        <%= passenger_form.label :name, "Name:"%>
+        <%= passenger_form.text_field :name%>
+        <%= passenger_form.label :email, "Email:"%>
+        <%= passenger_form.email_field :email%>
+    <% end %>
+    <% end %>
+    <%=f.submit "Submit"%>
+<% end %>
