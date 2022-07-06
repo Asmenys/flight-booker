@@ -12,4 +12,4 @@ class RandomFlightGenerator
     end
 end
 
-100.times {RandomFlightGenerator::generate_flight.save}
+300.times {RandomFlightGenerator::generate_flight.save}
