@@ -1,5 +1,5 @@
 <%unless flights.empty?%>
-    <%= form_with method: "GET" do |f|%>
+    <%= form_with url: "/bookings/new", amethod: "GET" do |f|%>
         <%flights.each do |flight|%>
                 <%= f.radio_button :flight_id, flight.id %>
                 <%= f.hidden_field :passenger_count, value: passenger_count%>
