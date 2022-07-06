@@ -1,11 +1,13 @@
-<%= form_with url: "/flights/index", method: "GET" do |f|%>
+<%= form_with method: "GET" do |f|%>
 <%= f.label :departure_airport, "Departure airport:"%>
-<%= f.select(:departure_airport, @departure_options)%>
+<%= f.select(:departure_airport, @departure_options, selected: params[:departure_airport])%>
 <%= f.label :arrival_airport, "arrival airport:"%>
-<%= f.select(:arrival_airport, @arrival_options)%>
+<%= f.select(:arrival_airport, @arrival_options, selected: params[:arrival_airport])%>
 <%= f.label :number_of_passangers, "Number of passangers:"%>
-<%= f.select(:number_of_passangers, @passanger_options)%>
+<%= f.select(:number_of_passangers, @passanger_options, selected: params[:number_of_passangers])%>
 <%= f.label :departure_date, "Departure date:"%>
-<%= f.select(:departure_date, @departure_dates)%>
+<%= f.select(:departure_date, @departure_dates, selected: params[:departure_date])%>
 <%= f.submit "Search"%>
 <% end %>
+
+<%= render 'flight', flights: @flights%>
