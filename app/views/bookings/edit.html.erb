@@ -5,5 +5,4 @@
         <% end %>
     </div>
 <% end %>
-<%= form_with model: @booking do |form|%>
-    <% end %>
+<%= render 'booking_form', flight_id: @booking.flight_id %>

@@ -1,0 +1,8 @@
+<%= form_with model: @booking do |booking_form| %>
+    <%= render 'flights/flight', flight: Flight.find(flight_id)%>
+    <%= booking_form.hidden_field :flight_id, value: flight_id %>
+    <%= booking_form.fields_for :passengers do |passenger_form| %>
+        <%= render 'passenger_form', passenger_form: passenger_form %>
+    <% end %>
+       <%=booking_form.submit "Submit"%>
+<% end %> 
