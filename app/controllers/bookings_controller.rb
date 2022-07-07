@@ -1,16 +1,20 @@
 class BookingsController < ApplicationController
     def new
         @booking = Booking.new
-        params[:passenger_count].to_i.times{@booking.passengers.build}
+        params[:flight][:passenger_count].to_i.times{@booking.passengers.build}
     end
 
     def create
-        @booking = Booking.create(booking_params)
-        @booking.passengers.build(params[:booking][:passengers])
+        @booking = Booking.new(booking_params)
         if @booking.save
+            redirect_to @booking
         else
-            render 'new', status: :unprocessable_entity
+            render 'edit', status: :unprocessable_entity
         end
+    end
+
+    def show
+        @booking = Booking.find(params[:id])
     end
 
     private
