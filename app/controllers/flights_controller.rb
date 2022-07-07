@@ -16,9 +16,9 @@ class FlightsController < ApplicationController
     end
 
     def set_options
-        @departure_options = Flight.all.map{|flight| [flight.departure_airport.code]}.uniq
-        @arrival_options = Flight.all.map{|flight| [flight.arrival_airport.code]}.uniq
-        @departure_dates = Flight.select(:departure_date).distinct.order(departure_date: :asc).map{|flight| flight.departure_date}
+        @departure_options = Flight.departing_flight_codes
+        @arrival_options = Flight.arriving_flight_codes
+        @departure_dates = Flight.departure_dates
         @passanger_options = Array.new(4) {|i = 0| [i+=1]}
     end
 end
