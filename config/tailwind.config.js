@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     colors: {
+      'current':'current',
       'gunmetal':'#242F40',
       'gold':'#CCA43B',
       'platinum':'#E5E5E5',

@@ -1,5 +1,5 @@
 
-<div class = "flex flex-nowrap container mx-auto mt-20 py-10 bg-gold drop-shadow-2xl ">
+<div class = "flex justify-center flex-column container mx-auto mt-20 py-10 bg-gold drop-shadow-2xl">
     <%= form_with class:"flex gap-5",method: "GET" do |f|%>
     <div class="flex gap-3 items-center" >
         <%= f.label :departure_airport, "Departure airport:"%>
@@ -17,7 +17,7 @@
         <%= f.label :departure_date, "Departure date:"%>
         <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date])%>
     </div>
-    <div class="grid hover:bg-zinc-500">
+    <div class="grid hover:bg-gunmetal-300">
         <%= f.submit "Search", class:"px-5 border border-solid border-gray-400 py-1"%>
     </div>
     <% end %>
