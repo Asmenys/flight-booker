@@ -17,7 +17,7 @@
             <%= f.label :departure_date, "Departure date:", class:"row-start-1 row-end-2 self-end"%>
             <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date]) %>
         </div>
-        <div class="grid hover:bg-gunmetal-100 hover:drop-shadow-xl active:bg-gunmetal-200">
+        <div class="grid self-end h-10 hover:bg-gunmetal-100 hover:drop-shadow-xl active:bg-gunmetal-200">
             <%= f.submit "Search", class:"px-5 border border-solid border-gunmetal-100"%>
         </div>
         <% end %>
