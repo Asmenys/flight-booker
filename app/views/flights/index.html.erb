@@ -1,28 +1,29 @@
+<div class="grid m-20 grid-cols-1">
+    <div class = "grid justify-self-stretch drop-shadow-2xl bg-gold grid mx-auto p-5">
+        <%= form_with class:"flex gap-5",method: "GET" do |f|%>
+        <div class="grid grid-cols-1">
+            <%= f.label :departure_airport, "Departure airport:", class:"row-start-1 row-end-2 self-end"%>
+            <%= f.select(:departure_airport, @departure_options, selected: params[:departure_airport]) %>
+        </div>
+        <div class="grid grid-cols-1">
+            <%= f.label :arrival_airport, "Arrival airport:", class:"row-start-1 row-end-2 self-end"%>
+            <%= f.select(:arrival_airport, @arrival_options, selected: params[:arrival_airport]) %>
+        </div>
+        <div class="grid grid-cols-1">
+            <%= f.label :number_of_passangers, "Number of passangers:", class:"row-start-1 row-end-2 self-end"%>
+            <%= f.select(:number_of_passangers, @passanger_options, selected: params[:number_of_passangers]) %>
+        </div>
+        <div class="grid grid-cols-1">
+            <%= f.label :departure_date, "Departure date:", class:"row-start-1 row-end-2 self-end"%>
+            <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date]) %>
+        </div>
+        <div class="grid hover:bg-gunmetal-100 hover:drop-shadow-xl active:bg-gunmetal-200">
+            <%= f.submit "Search", class:"px-5 border border-solid border-gunmetal-100"%>
+        </div>
+        <% end %>
+    </div>
 
-<div class = "flex justify-center flex-column container mx-auto mt-20 py-10 bg-gold drop-shadow-2xl">
-    <%= form_with class:"flex gap-5",method: "GET" do |f|%>
-    <div class="flex gap-3 items-center" >
-        <%= f.label :departure_airport, "Departure airport:"%>
-        <%= f.select(:departure_airport, @departure_options, selected: params[:departure_airport])%>
+    <div class="grid bg-gunmetal-100">
+        <%= render 'flight_form', flights: @flights, passenger_count: params[:number_of_passangers]%>
     </div>
-    <div class="flex gap-3 items-center" >
-        <%= f.label :arrival_airport, "Arrival airport:"%>
-        <%= f.select(:arrival_airport, @arrival_options, selected: params[:arrival_airport])%>
-    </div>
-    <div class="flex gap-3 items-center">
-        <%= f.label :number_of_passangers, "Number of passangers:"%>
-        <%= f.select(:number_of_passangers, @passanger_options, selected: params[:number_of_passangers])%>
-    </div>
-    <div class="flex gap-3 items-center">
-        <%= f.label :departure_date, "Departure date:"%>
-        <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date])%>
-    </div>
-    <div class="grid hover:bg-gunmetal-100 hover:drop-shadow-xl active:bg-gunmetal-200">
-        <%= f.submit "Search", class:"px-5 border border-solid border-gunmetal-100 py-1"%>
-    </div>
-    <% end %>
-</div>
-
-<div>
-<%= render 'flight_form', flights: @flights, passenger_count: params[:number_of_passangers]%>
 </div>
