@@ -1,10 +1,14 @@
 <%unless flights.empty?%>
-    <%= form_with model: Flight, url: "/bookings/new", method: "GET" do |f|%>
-        <%flights.each do |flight|%>
-                <%= f.radio_button :flight_id, flight.id %>
-                <%= f.hidden_field :passenger_count, value: passenger_count%>
-                <%= render 'flight', flight: flight %>
-        <% end %>
+    <%= form_with model: Flight, url: "/bookings/new", method: "GET", class:"flight-card-container" do |f|%>
+        <div class="flight-card-container gap-2 p-2">
+            <%flights.each do |flight|%>
+                    <div class="border-solid border-2 border-gold">
+                        <%= f.radio_button :flight_id, flight.id %>
+                        <%= f.hidden_field :passenger_count, value: passenger_count%>
+                        <%= render 'flight', flight: flight %>
+                    </div>
+            <% end %>
+        </div>
         <%= f.submit "Submit"%>
     <% end %>
 <% end %>
