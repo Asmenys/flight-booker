@@ -1,13 +1,26 @@
-<%= form_with method: "GET" do |f|%>
-<%= f.label :departure_airport, "Departure airport:"%>
-<%= f.select(:departure_airport, @departure_options, selected: params[:departure_airport])%>
-<%= f.label :arrival_airport, "arrival airport:"%>
-<%= f.select(:arrival_airport, @arrival_options, selected: params[:arrival_airport])%>
-<%= f.label :number_of_passangers, "Number of passangers:"%>
-<%= f.select(:number_of_passangers, @passanger_options, selected: params[:number_of_passangers])%>
-<%= f.label :departure_date, "Departure date:"%>
-<%= f.select(:departure_date, @departure_dates, selected: params[:departure_date])%>
-<%= f.submit "Search"%>
-<% end %>
 
+<div class = "flex flex-nowrap container mx-auto py-20">
+    <%= form_with class:"flex gap-5",method: "GET" do |f|%>
+    <div class="flex gap-3 items-center" >
+        <%= f.label :departure_airport, "Departure airport:"%>
+        <%= f.select(:departure_airport, @departure_options, selected: params[:departure_airport])%>
+    </div>
+    <div class="flex gap-3 items-center" >
+        <%= f.label :arrival_airport, "Arrival airport:"%>
+        <%= f.select(:arrival_airport, @arrival_options, selected: params[:arrival_airport])%>
+    </div>
+    <div class="flex gap-3 items-center">
+        <%= f.label :number_of_passangers, "Number of passangers:"%>
+        <%= f.select(:number_of_passangers, @passanger_options, selected: params[:number_of_passangers])%>
+    </div>
+    <div class="flex gap-3 items-center">
+        <%= f.label :departure_date, "Departure date:"%>
+        <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date])%>
+    </div>
+    <div class="flex items-center px-5"><%= f.submit "Search"%></div>
+    <% end %>
+</div>
+
+<div>
 <%= render 'flight_form', flights: @flights, passenger_count: params[:number_of_passangers]%>
+</div>
