@@ -1,5 +1,5 @@
 <div class="grid m-20 grid-cols-1">
-    <div class = "grid justify-self-stretch drop-shadow-2xl bg-gold grid mx-auto p-5">
+    <div class = "grid justify-self-stretch rounded-sm drop-shadow-2xl bg-gold grid mx-auto p-5">
         <%= form_with class:"flex gap-5",method: "GET" do |f|%>
         <div class="grid grid-cols-1">
             <%= f.label :departure_airport, "Departure airport:", class:"row-start-1 row-end-2 self-end"%>
@@ -18,12 +18,12 @@
             <%= f.select(:departure_date, @departure_dates, selected: params[:departure_date]) %>
         </div>
         <div class="grid self-end h-10 hover:bg-gunmetal-100 hover:drop-shadow-xl active:bg-gunmetal-200">
-            <%= f.submit "Search", class:"px-5 border border-solid border-gunmetal-100"%>
+            <%= f.submit "Search", class:"px-5 rounded-sm border-b-4 border border-solid border-b"%>
         </div>
         <% end %>
     </div>
 
-    <div class="grid bg-gunmetal-100 mt-2 ">
+    <div class="grid rounded-sm bg-gunmetal-100 mt-2 ">
         <%= render 'flight_form', flights: @flights, passenger_count: params[:number_of_passangers]%>
     </div>
 </div>
