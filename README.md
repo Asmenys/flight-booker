@@ -1,6 +1,6 @@
 # FLIGHT BOOKER
 
-##This is an attempt at creating a basic flight booker app in rails.
+## This is an attempt at creating a basic flight booker app in rails.
 
 Live heroku page: https://murmuring-river-71927.herokuapp.com/
 > **NOTE:** Initial load time for the app may be relatively lengthy due to Heroku's dyno sleep policy.
