@@ -1,4 +1,12 @@
-<%= render 'flights/flight', flight: Flight.find(@booking.flight_id)%>
-<% @booking.passengers.each do |passenger|%>
-    <h4 class="passenger-name"><%= passenger.name %></h4>
-<% end %>
+<div class="grid p-5 mr-40 ml-40 m-20 bg-jet mx-auto">
+    <%= render 'flights/flight', flight: Flight.find(@booking.flight_id)%>
+    <h3 class="mt-5 text-white font-bold justify-self-center">Passenger information</h3>
+    <div class="grid border-solid border-t-4 border-platinum">
+        <% @booking.passengers.each do |passenger|%>
+            <div class="border-solid border-b-2 border-platinum grid grid-rows-1 m-5">
+                <h4 class="row-start-1 text-white font-bold"><%= passenger.name.capitalize %></h4>
+                <h4 class="row-start-1 justify-self-end text-white font-bold"><%= passenger.email %></h4>
+            </div>
+        <% end %>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 <div class=" grid grid-rows-3 grid-cols-2 gap-3">
     <h3 class ="text-white row-start-3 row-end-3 col-start-2 justify-self-end"> Flight ID: <%=flight.id%></h3>
-    <h3 class="text-gold-800 underline row-start-1 row-end-2 col-start-1 justify-self-end"><%=Airport.find(flight.departure_airport_id).code%></h3>
-    <h3 class="text-gold-800 underline col-start-2 justify-self-start"><%=Airport.find(flight.arrival_airport_id).code%></h3>
+    <h3 class="font-bold text-gold-800 underline row-start-1 row-end-2 col-start-1 justify-self-end"><%=Airport.find(flight.departure_airport_id).code%></h3>
+    <h3 class="font-bold text-gold-800 underline col-start-2 justify-self-start"><%=Airport.find(flight.arrival_airport_id).code%></h3>
     <h5 class="text-white ">Departure date: <%=flight.departure_date%></h5>
     <h5 class="text-white  row-start-3">Departure time: <%= flight.departure_time.strftime('%I:%M %p')%></h5>
 </div>

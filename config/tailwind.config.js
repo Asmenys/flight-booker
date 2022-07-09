@@ -21,6 +21,10 @@ module.exports = {
         'white':'#FFFFFF',
         'jet':'#363636',
       },
+      maxHeight: {
+        '128': '32rem',
+        '164': '700px',
+      },
     },
   },
   plugins: [
