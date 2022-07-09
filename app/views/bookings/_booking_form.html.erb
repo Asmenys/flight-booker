@@ -1,8 +1,14 @@
-<%= form_with model: @booking do |booking_form| %>
-    <%= render 'flights/flight', flight: Flight.find(flight_id)%>
-    <%= booking_form.hidden_field :flight_id, value: flight_id %>
-    <%= booking_form.fields_for :passengers do |passenger_form| %>
-        <%= render 'passenger_form', passenger_form: passenger_form %>
+<div class="rounded-sm bg-jet border-solid border-black border-4 border-t p-5 m-20 max-w-6xl mx-auto">
+    <%= form_with class:"", model: @booking do |booking_form| %>
+        <%= render 'flights/flight', flight: Flight.find(flight_id)%>
+        <%= booking_form.hidden_field :flight_id, value: flight_id %>
+        <div class="grid border-solid border-t-4  border-platinum p-2">
+            <%= booking_form.fields_for :passengers do |passenger_form| %>
+                <%= render 'passenger_form', passenger_form: passenger_form %>
+            <% end %>
+        </div>
+        <div class="grid border-2 border-b-4 border-black w-28 h-12 justify-items-stretch hover:bg-zinc-800 active:bg-zinc-600">
+            <%=booking_form.submit "Submit"%>
+        </div>
     <% end %>
-       <%=booking_form.submit "Submit"%>
-<% end %> 
+</div>

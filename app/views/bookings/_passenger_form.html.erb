@@ -1,5 +1,7 @@
-<h5>Passenger credentials:</h5>
-<%= passenger_form.label :name, "Name:"%>
-<%= passenger_form.text_field :name%>
-<%= passenger_form.label :email, "Email:"%>
-<%= passenger_form.email_field :email%>
+<div class="mt-5 text-white font-bold w">
+    <h5 class="mb-2">Passenger credentials:</h5>
+    <%= passenger_form.label :name, "Name:"%>
+    <%= passenger_form.text_field :name, :class => 'mr-3 mb-3 text-jet'%><br>
+    <%= passenger_form.label :email, "Email:"%>
+    <%= passenger_form.email_field :email, :class => 'text-jet'%>
+</div>

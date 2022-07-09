@@ -1,8 +1,13 @@
-<% if @booking.errors.any?%>
-    <div class="error-explanation">
-        <%@booking.errors.each do |error| %>
-            <h4><%=error.full_message%></h4>
+<div>
+    
+    <%= render 'booking_form', flight_id: @booking.flight_id %>
+    <div>
+        <% if @booking.errors.any?%>
+            <div class="error-explanation">
+                <%@booking.errors.each do |error| %>
+                    <h4><%=error.full_message%></h4>
+                <% end %>
+            </div>
         <% end %>
     </div>
-<% end %>
-<%= render 'booking_form', flight_id: @booking.flight_id %>
+</div>
