@@ -7,6 +7,7 @@ Live heroku page: https://murmuring-river-71927.herokuapp.com/
 
 ## Features
 * Database seeds to populate the database with data that attempts to mimick a real world use case.
+> **Note:** Generates a limited number of flights therefore not all search combinations will return a flight.
 * Turbo fast application responsiveness using Turbo Frames.
 * Responsive design using grid.
 * Styling using tailwindscss
