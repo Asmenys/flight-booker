@@ -1,0 +1,11 @@
+   You have successfully booked a ticket for flight  <%=@flight_id%>
+    ==================================================
+        your departure date is: <%=@flight.departure_date%> at: <%= @flight.departure_time.strftime('%I:%M %p')%>
+        ------------------------------------------------------------------------------------------------------------
+        your arrival time is: <%=Date.parse(@arrival_time.to_s)%> at: <%=@arrival_time.strftime('%I %p')%>
+
+        To see your ticket, just follow this link: <%=@url%>
+
+        Thanks for using our services, have an amazing flight!
+
+   

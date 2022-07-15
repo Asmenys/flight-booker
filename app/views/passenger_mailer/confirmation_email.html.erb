@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+    <p>
+        You have successfully booked a ticket for flight <%=@flight.id%>
+        your departure date is: <%=@flight.departure_date%> at: <%= @flight.departure_time.strftime('%I:%M %p')%>
+        your arrival time is: <%=Date.parse(@arrival_time.to_s)%> at: <%=@arrival_time.strftime('%I %p')%>
+    </p>
+    <p>
+        To see your ticket, just follow this link: <%=@url%>
+    </p>
+    <p>
+        Thanks for using our services, have an amazing flight!
+    </p>
+</body>
+</html>
