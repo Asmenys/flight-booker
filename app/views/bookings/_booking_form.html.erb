@@ -1,5 +1,5 @@
 <div class="rounded-sm bg-jet border-solid border-black border-4 border-t p-5 max-w-6xl mx-auto">
-    <%= form_with class:"", model: @booking do |booking_form| %>
+    <%= form_with model: @booking do |booking_form| %>
         <%= render 'flights/flight', flight: Flight.find(flight_id)%>
         <%= booking_form.hidden_field :flight_id, value: flight_id %>
         <div class="grid border-solid border-t-4  border-platinum p-2">
