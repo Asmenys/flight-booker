@@ -7,7 +7,7 @@ class RandomFlightGenerator
         flight.departure_date = departure_time
         flight.departure_airport = RandomAirportSelector::get_airport
         flight.arrival_airport = RandomAirportSelector::get_airport
-        flight.duration = rand(0..24).to_i
+        flight.duration = rand(2..24).to_i
         flight
     end
 end
