@@ -4,4 +4,5 @@
     <h3 class="font-bold text-gold-800 underline col-start-2 justify-self-start"><%=Airport.find(flight.arrival_airport_id).code%></h3>
     <h5 class="text-white ">Departure date: <%=flight.departure_date%></h5>
     <h5 class="text-white  row-start-3">Departure time: <%= flight.departure_time.strftime('%I:%M %p')%></h5>
+    <h5 class="text-white row-start-2 col-start-2 justify-self-end"> Arrival time: <%= flight.departure_time.advance(hours: flight.duration).strftime('%m-%d at %I:%M %p')%></h5>
 </div>
