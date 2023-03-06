@@ -2,9 +2,6 @@
 
 ## This is an attempt at creating a basic flight booker app in rails.
 
-Live heroku page: https://murmuring-river-71927.herokuapp.com/
-> **NOTE:** Initial load time for the app may be relatively lengthy due to Heroku's dyno sleep policy.
-
 ## Features
 * Database seeds to populate the database with data that attempts to mimick a real world use case.
 > **Note:** Generates a limited number of flights therefore not all search combinations will return a flight.
